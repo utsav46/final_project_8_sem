@@ -1,0 +1,9 @@
+/**
+ * New query file
+ */
+query selectCommoditiesByOwner {
+  description: "Select all commodities based on their owner"
+  statement:
+      SELECT org.example.mynetwork.Drug
+          WHERE (presentOwner == _$presentOwner)
+}
